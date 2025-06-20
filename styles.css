@@ -32,9 +32,13 @@ a {
 
 .hero {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: stretch;
     background-color: #1F2937;
+}
+
+.hero-content {
+    flex: 1 1 0px;
 }
 
 .hero-main-text {
@@ -50,6 +54,7 @@ a {
 
 .hero-image {
     display: flex;
+    flex: 1 1 0px;
     justify-content: center;
     align-items: center;
     color: #F9FAF8;
