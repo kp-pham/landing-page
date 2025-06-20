@@ -33,7 +33,7 @@ a {
 .hero {
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: stretch;
     background-color: #1F2937;
 }
 
@@ -46,4 +46,10 @@ a {
 .hero-secondary-text {
     font-size: 18px;
     color: #E5E7EB;
+}
+
+.hero-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
