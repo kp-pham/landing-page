@@ -34,6 +34,7 @@ a {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    background-color: #1F2937;
 }
 
 .hero-main-text {
