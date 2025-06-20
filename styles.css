@@ -60,11 +60,13 @@ a {
     justify-content: center;
     align-items: center;
     color: #F9FAF8;
-    background-color: #6d747e;
+    background-color: #6D747E;
 }
 
 .footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    color: #E5E7EB;
+    background-color: #1F2937;
 }
