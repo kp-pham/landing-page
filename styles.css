@@ -3,6 +3,10 @@
     justify-content: space-around;
 }
 
+ul {
+    list-style-type: none;
+}
+
 a {
     font-size: 18px;
     color: #E5E7EB;
