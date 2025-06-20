@@ -62,3 +62,9 @@ a {
     color: #F9FAF8;
     background-color: #6d747e;
 }
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
