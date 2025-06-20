@@ -52,4 +52,6 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+    color: #F9FAF8;
+    background-color: #6d747e;
 }
