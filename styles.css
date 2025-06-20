@@ -1,5 +1,6 @@
 .header {
     display: flex;
+    align-items: center;
     justify-content: space-around;
     background-color: #1F2937;
 }
@@ -11,8 +12,6 @@
 
 ul {
     display: flex;
-    justify-content: center;
-    align-items: center;
     gap: 20px;
     list-style-type: none;
     padding: 0;
