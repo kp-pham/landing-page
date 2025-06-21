@@ -114,6 +114,12 @@ a {
     color: #1F2937;
 }
 
+.modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .footer {
     display: flex;
     justify-content: center;
