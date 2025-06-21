@@ -66,10 +66,11 @@ a {
 .hero-sign-up {
     color: #F9FAF8;
     background-color: #3882F6;
-    border-radius: 5px;
+    border-radius: 7px;
     border: none;
-    width: 100px;
-    padding: 5px 20px;
+    width: 125px;
+    padding: 10px 20px;
+    margin: 10px 0 0 0;
 }
 
 .hero-image {
