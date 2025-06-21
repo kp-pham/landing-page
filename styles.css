@@ -95,6 +95,7 @@ a {
 
 .quote-section {
     display: flex;
+    background-color: #E5E7EB;
 }
 
 .quote {
