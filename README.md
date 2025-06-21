@@ -95,6 +95,53 @@ The use of separate containers for the hero statement and image placeholder allo
 
 ## Information
 
+The information section provides information about the product instead of promoting the product. The purpose of the section is to inform the user behind the purpose of the product and the impact of the product on customers through testimonials and case studies from real customers. The structure of the information section is a container to set aside space for the respective section of the page and containers for the header of the section and the illustrations and accompanying subtext.
+
+```
+<div class="information-section">
+     <div class="information-header">Some random information.</div>
+    <div class="information">
+        <div class="card">
+            <div class="illustration"></div>
+            <div class="subtext">this is some subtext under an illustration or image</div>
+        </div>
+        <div class="card">
+            <div class="illustration"></div>
+            <div class="subtext">this is some subtext under an illustration or image</div>
+        </div>
+        <div class="card">
+            <div class="illustration"></div>
+            <div class="subtext">this is some subtext under an illustration or image</div>
+        </div>
+        <div class="card">
+            <div class="illustration"></div>
+            <div class="subtext">this is some subtext under an illustration or image</div>
+        </div>
+    </div>
+</div>
+```
+
+The use of separate containers for the header of the section and the illustrations and accompanying subtext allows for the use of flex to arrange the  flex items in the flex container for the illustrations and accompanying subtext without affecting the formatting for the header of the section. Each illustration and caption is encapsulated within a container which is a flex item of the flex container and are arranged to have an equal amount of space between one another. On the other hand, the text for the header of the section can be centered through text alignment instead of flexbox.
+
+```
+.information-center {
+    text-align: center;
+}
+
+.information {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 175px;
+}
+```
+
 ## Quote Section
 
 ## Modal
