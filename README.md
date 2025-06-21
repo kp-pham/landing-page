@@ -2,6 +2,45 @@
 
 The landing page project builds upon the markup of documents for creating and structuring the content of webpages with style sheets for the presentation and styling of documents to format the content of webpages. Given an image of the design for a webpage and a reference of the fonts and colors used for the design of the website, recreate the webpage from a blank HTML document and use  a CSS stylesheet to match the design of the original webpage.
 
+## Layout
+There are four main sections of the webpage in addition to the header and footer. The main sections, header, and footer are encapsulated as containers within the body of the HTML document which is the outermost container for the page content. 
+
+```
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Landing Page</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="header">
+            ...
+        </div>
+
+        <div class="hero-section">
+            ...
+        </div>
+
+        <div class="information-section">
+            ...
+        </div>
+
+        <div class="quote-section">
+            ...
+        </div>
+
+        <div class="modal-section">
+            ...
+        </div>
+
+        <div class="footer">
+            ...
+        </div>   
+    </body>
+```
+
+
 ## Header
 
 The header is the topmost section of the website. The purpose of the header is to display the header logo and provide links to the other pages of the website.  The structure of the header is a container whose children are containers which represent the 
@@ -205,3 +244,20 @@ The use of two separate containers for the space set aside for the respective se
 ```
 
 ## Footer
+The footer is the bottommost section of the website. The purpose of the footer is miscellaneous information such as copyright information. The structure of the footer is a container which has the text for the footer.
+
+```
+<div class="footer">
+            Copyright © The Odin Project 2021
+</div>
+```
+
+The use of the container for the footer allows for the use of flexbox to center the text of the footer horizontally and vertically.
+
+```
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+```
