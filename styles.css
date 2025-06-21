@@ -4,6 +4,7 @@ body {
     padding: 0;
     margin: 0;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
 }
 
 .header {
@@ -40,15 +41,16 @@ a {
     background-color: #1F2937;
 }
 
-.hero-content {
+/* .hero-content {
     flex: 1 1 0px;
-}
+} */
 
 .hero-main-text {
     font-size: 48px;
     color: #F9FAF8;
     font-weight: 900;
 }
+
 
 .hero-secondary-text {
     font-size: 18px;
@@ -131,10 +133,11 @@ a {
 
 .modal {
     display: flex;
-    justify-content: center;
+    width: 800px;
+    justify-content: space-around;
     align-items: center;
     background-color: #3882F6;
-    padding: 24px 150px;
+    padding: 24px 100px;
     gap: 100px;
 }
 
