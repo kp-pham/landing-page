@@ -34,23 +34,28 @@ a {
     text-decoration: none;
 }
 
-.hero {
+.hero-section {
     display: flex;
     justify-content: center;
-    align-items: stretch;
+    align-items: center;
     background-color: #1F2937;
 }
 
-/* .hero-content {
-    flex: 1 1 0px;
-} */
+.hero {
+    display: flex;
+    width: 1025px;
+    gap: 40px;
+}
+
+.hero-content {
+    flex: 1;
+}
 
 .hero-main-text {
     font-size: 48px;
     color: #F9FAF8;
     font-weight: 900;
 }
-
 
 .hero-secondary-text {
     font-size: 18px;
@@ -133,11 +138,11 @@ a {
 
 .modal {
     display: flex;
-    width: 800px;
+    width: 1025px;
     justify-content: space-around;
     align-items: center;
     background-color: #3882F6;
-    padding: 24px 100px;
+    padding: 24px 0;
     gap: 100px;
 }
 
