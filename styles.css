@@ -78,7 +78,8 @@ a {
 }
 
 .subtext {
-    font-size: 18px;
+    font-size: 10px;
+    text-align: center;
     color: #6D747E;
 }
 
