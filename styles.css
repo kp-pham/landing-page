@@ -125,6 +125,16 @@ a {
     justify-content: center;
     align-items: center;
     background-color: #3882F6;
+    gap: 100px;
+}
+
+.modal-header {
+    font-size: 24px;
+    color: #F9FAF8;
+}
+
+.modal-text {
+    color: #E5E7EB;
 }
 
 .footer {
