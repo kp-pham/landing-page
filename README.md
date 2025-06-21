@@ -43,7 +43,55 @@ ul {
 
 ## Hero
 
-The hero 
+The hero is the section at the top of the website beneath the header. The purpose of the hero is to capture the attention of the user with an image and statement as the first section the user sees. The structure of the hero is a container to set aside space for the respective section of the page and a container for the hero statement and the placeholder for the image. The hero statement contains the main and secondary text and a button for the user to sign up for the advertised product. The placeholder for the image is represented as an empty container with placeholder text and background.
+ 
+
+```
+<div class="hero-section">
+    <div class="hero">
+        <div class="hero-content">
+            <div class="hero-main-text">This website is awesome</div>
+            <div class="hero-secondary-text">
+                This website has some subtext that goes here under the main title.
+                It's a smaller font and the color in lower contrast.
+            </div>
+            <button class="hero-sign-up">Sign up</button>
+        </div>
+        <div class="hero-image">this is a placeholder for an image</div>
+     </div>
+</div>
+```
+
+The use of two separate containers for the hero section and hero allows for the use of flexbox to center the hero and arrange the hero statement and image placeholder with an equal amount of space between them because the hero section is the outermost flex container and the hero is a nested flex container. The outermost flex container centers the nested flex container and the nested flex container arranges the  elements to have an equal amount of space when centered.
+
+```
+.hero-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero {
+    display: flex;
+    width: 1025px;
+    gap 40px;
+}
+```
+
+The use of separate containers for the hero statement and image placeholder allow for the use of flexbox to adjust the width of the flex items within the flex container. The shorthand ```flex``` sets the ```flex-grow```, ```flex-shrink```, and ```flex-basis``` attributes which determines the growth and shrink factor and the percentage of space in the flex container the flex item consumes. The ```flex-grow``` attribute is set to ```1``` for the hero statement and image placeholder because the default value for the ```flex-grow``` attribute is ```0``` and the default value for the ```flex-shrink``` attribute is  ```1```. In other words, flex items can only shrink by default. The ```flex-basis``` attribute for the hero statement is set to a lower percentage than the image placeholder for the image placeholder to take up more space than the hero statement.
+
+```
+.hero-content {
+    flex: 1 1 90%;
+}
+
+.hero-image {
+    display: flex;
+    flex: 1 1 100%;
+    justtify-content: center;
+    align-items: center;
+}
+```
 
 ## Information
 
