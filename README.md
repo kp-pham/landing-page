@@ -73,7 +73,6 @@ The use of two separate containers for the hero section and hero allows for the 
 
 .hero {
     display: flex;
-    width: 1025px;
     gap 40px;
 }
 ```
@@ -138,11 +137,39 @@ The use of separate containers for the header of the section and the illustratio
     display: flex;
     flex-direction: column;
     gap: 5px;
-    width: 175px;
 }
 ```
 
 ## Quote Section
+
+The quote section contains a quotation and attribution. The structure of the quote section is a container to set aside space for the respective section of the page and a container whose children are containes for the quotation and attribution. 
+
+```
+<div class="quote-section">
+    <div class="blockquote">
+        <div class="quote">
+            This is an inspiring quote, or a testimonial from a customer. Maybe it's 
+            just filling up space or maybe people will actually read it. Who Knows? 
+            All I know is that it looks nice.
+        </div>
+        <div class="attribution">-Thor, God of Thunder</div>
+    </div>
+</div>
+```
+
+The use of two separate containers for the space of the respective section of the page and the container whose children quotation and attribution allow for the outermost container to be used as a flex container to center the quotation and attribution and the nested container is used to set the width for the quotation and attribution.
+
+```
+.quote-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blockquote {
+    width: 750px;
+}
+```
 
 ## Modal
 
