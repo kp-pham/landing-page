@@ -48,7 +48,7 @@ a {
 }
 
 .hero-content {
-    flex: 1;
+    flex: 1 1 80%;
 }
 
 .hero-main-text {
@@ -64,7 +64,7 @@ a {
 
 .hero-image {
     display: flex;
-    flex: 1 1 0px;
+    flex: 1 1 100%;
     justify-content: center;
     align-items: center;
     color: #F9FAF8;
