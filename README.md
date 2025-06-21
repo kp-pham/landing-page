@@ -40,6 +40,17 @@ There are four main sections of the webpage in addition to the header and footer
     </body>
 ```
 
+<<<<<<< HEAD
+=======
+The body of the HTML document is turned into a flex container because the structure of the content is arranged from top to bottom. The ```flex-direction``` attribute is set to column to change the main axis from row to column and the cross axis from column to row because the content of the page is structured in the direction of the main axis. The footer of the webpage is pushed to the bottom of the page because the sections before the footer are placed above the footer.
+
+```
+body {
+    display: flex;
+    flex-direction: column;
+}
+```
+>>>>>>> 0e1c9c6 (docs: write layout section)
 
 ## Header
 
