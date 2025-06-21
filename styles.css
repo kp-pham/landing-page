@@ -97,11 +97,11 @@ a {
 .information {
     display: flex;
     justify-content: center;
-    gap: 40px;
+    gap: 60px;
 }
 
 .subtext {
-    font-size: 10px;
+    font-size: 18px;
     text-align: center;
     color: #6D747E;
 }
@@ -110,11 +110,11 @@ a {
     display: flex;
     flex-direction: column;
     gap: 5px;
-    width: 100px;
+    width: 175px;
 }
 
 .illustration {
-    height: 100px;
+    height: 175px;
     background-color: #FFFFFF;
     border-radius: 10px;
     border: 3px solid #3882F6;
