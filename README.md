@@ -120,7 +120,7 @@ The information section provides information about the product instead of promot
 </div>
 ```
 
-The use of separate containers for the header of the section and the illustrations and accompanying subtext allows for the use of flex to arrange the  flex items in the flex container for the illustrations and accompanying subtext without affecting the formatting for the header of the section. Each illustration and caption is encapsulated within a container which is a flex item of the flex container and are arranged to have an equal amount of space between one another. On the other hand, the text for the header of the section can be centered through text alignment instead of flexbox.
+The use of separate containers for the header of the section and the illustrations and accompanying subtext allows for the use of flex to arrange the  flex items in the flex container for the illustrations and accompanying subtext without affecting the formatting for the header of the section. Each illustration and caption is encapsulated within a container which is a flex item of the flex container and are arranged to have an equal amount of space between one another. On the other hand, the text for the header of the section can be centered horizontally through text alignment.
 
 ```
 .information-center {
@@ -172,5 +172,36 @@ The use of two separate containers for the space of the respective section of th
 ```
 
 ## Modal
+
+Modals are pop-ups appearing on the page. The purpose of the modal is for the call to action which is the section at the bottom of the page which reminds the user to sign up for the product being advertised. The structure of the modal is the space set aisde for the respective section and the container whose children are the content of the modal and the button to sign up for the product being advertised.
+
+```
+<div class="modal-section">
+    <div class="modal">
+        <div class="modal-content">
+            <div class="modal-header">Call to action! It's time!</div>
+            <div class="modal-text">Sign up for our product by clicking that button right over there!</div>
+        </div>
+        <button class="modal-sign-up">Sign up</button>
+    </div>
+</div>
+```
+
+The use of two separate containers for the space set aside for the respective section of the page and the container whose children are the content of the modal and the sign-up button allows for nested flex containers. The outermost flex container centers the modal in the section for the call to action and the innermost flex container arranges the content of the modal and the sign-up button to have be evenly spaced between one another and from the edge of the modal.
+
+```
+.modal-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 100px;
+}
+```
 
 ## Footer
