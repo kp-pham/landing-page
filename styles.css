@@ -99,7 +99,13 @@ a {
 
 .quote-section {
     display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #E5E7EB;
+}
+
+.blockquote {
+    width: 750px;
 }
 
 .quote {
